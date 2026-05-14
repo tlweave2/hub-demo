@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bend the Trend — Riverbank Boutique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <style>:root {
+  --color-primary: #1a1a1a;
+  --color-secondary: #f5f5f5;
+  --color-accent: #d7885c;
+  --color-background: #ffffff;
+  --color-text: #1a1a1a;
+}
+
+/* Hero Section */
+.nse3de40-hero {
+  padding: 120px 24px 80px;
+  background: #f5f5f5;
+}
+.nse3de40-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.nse3de40-hero-photo {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 4/3;
+  border: 15px solid white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.2) 100%);
+}
+.nse3de40-hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.nse3de40-heart {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #d7885c;
+  font-size: 28px;
+  line-height: 1;
+  pointer-events: none;
+}
+.nse3de40-torn-paper {
+  flex: 1;
+  background: white;
+  padding: 24px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.nse3de40-torn-top {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  display: block;
+  pointer-events: none;
+}
+.nse3de40-torn-content {
+  position: relative;
+  z-index: 1;
+}
+.nse3de40-hero-headline {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+.nse3de40-hero-subhead {
+  max-width: 360px;
+  font-size: 1rem;
+  color: rgba(26,26,26,0.8);
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+.nse3de40-hero-cta {
+  display: inline-block;
+  background: #d7885c;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.nse3de40-hero-cta:hover {
+  background-color: #b86e3f;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .nse3de40-hero-inner {
+    flex-direction: column;
+  }
+  .nse3de40-hero-photo {
+    width: 100%;
+  }
+}
+
+/* About Section */
+.nse3de40-about {
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nse3de40-about-container {
+  width: 100%;
+  max-width: 640px;
+  position: relative;
+}
+.nse3de40-about-card {
+  background: var(--color-background);
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-left: 4px dotted var(--color-accent);
+  max-width: 640px;
+  width: 100%;
+  position: relative;
+}
+.nse3de40-sticky-note {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 280px;
+  height: 180px;
+  background: #fff9c4;
+  transform: rotate(-2deg);
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.nse3de40-pushpin {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #c0c0c0, #808080);
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.nse3de40-note-title {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: var(--color-text);
+}
+.nse3de40-note-text {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--color-text);
+  text-align: center;
+}
+.nse3de40-headline {
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+}
+.nse3de40-body {
+  font-size: 1rem;
+  color: rgba(26,26,26,0.8);
+  margin: 0;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .nse3de40-about {
+    padding: 80px 24px;
+  }
+  .nse3de40-about-card {
+    padding: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .nse3de40-about {
+    padding: 80px 24px;
+  }
+}
+
+/* Hours & Location Section */
+.nse3de40-hours-location {
+  background: var(--color-secondary);
+  padding: 0 24px 80px;
+}
+.nse3de40-wavy-divider {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -1px;
+}
+.nse3de40-hours-location-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+}
+.nse3de40-hours-card {
+  background: white;
+  padding: 32px;
+  border-left: 3px solid #d7885c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.nse3de40-hours-card h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+}
+.nse3de40-address,
+.nse3de40-hours {
+  font-size: 1rem;
+  color: rgba(26,26,26,0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+.nse3de40-map-card svg {
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff9f0;
+}
+@media (max-width: 768px) {
+  .nse3de40-hours-location-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Gallery Section */
+.nse3de40 {
+  padding: 60px 0;
+  background: var(--color-background);
+}
+.nse3de40__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.nse3de40__header span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+.nse3de40__header h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-top: 4px;
+}
+.nse3de40-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 24px 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.nse3de40-gallery::-webkit-scrollbar {
+  display: none;
+}
+.nse3de40-gallery-card {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.nse3de40-card-circle {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed #5c91bf;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+.nse3de40-card-star {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: #d7885c;
+  font-size: 24px;
+}
+.nse3de40-card-text {
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  color: #5c91bf;
+  margin: 0;
+}
+
+/* Events Section */
+.nse3de40-events {
+  background: var(--color-secondary, #f5f5f5);
+  padding: 80px 24px;
+  display: flex;
+  justify-content: center;
+}
+.nse3de40-events-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.nse3de40-event-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nse3de40-perforated-edge {
+  width: 100%;
+  height: 12px;
+  background: #fef7e0;
+  background-image: repeating-radial-gradient(circle at 50% 6px, transparent 2px, #fef7e0 2px);
+  background-size: 12px 12px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  margin-bottom: -1px;
+}
+.nse3de40-event-card {
+  background: #fef7e0;
+  border-top: 5px dotted #d7885c;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 40px;
+  max-width: 520px;
+  width: 100%;
+}
+.nse3de40-event-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.nse3de40-event-headline {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  color: var(--color-text, #1a1a1a);
+  margin: 0;
+  line-height: 1.2;
+}
+.nse3de40-event-subhead {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: var(--color-text, #1a1a1a);
+  opacity: 0.9;
+  margin: 0;
+}
+.nse3de40-event-body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: rgba(26,26,26,0.8);
+  margin: 0;
+  line-height: 1.6;
+}
+.nse3de40-event-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text, #1a1a1a);
+  opacity: 0.85;
+}
+.nse3de40-calendar-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-accent, #d7885c);
+  fill: none;
+}
+
+/* Testimonials Section */
+.nse3de40-testimonials {
+  background: var(--color-secondary);
+  padding: 80px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+@media (max-width: 767px) {
+  .nse3de40-testimonials {
+    padding: 64px 16px;
+  }
+}
+.nse3de40-testimonial-card {
+  position: relative;
+  max-width: 560px;
+  width: 100%;
+  background: var(--color-background);
+  padding: 48px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: rotate(0.5deg);
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 22px,
+    #e0e0e0 23px,
+    #e0e0e0 24px
+  );
+  background-size: 100% 24px;
+  background-position: top left;
+}
+.nse3de40-testimonial-card::before {
+  content: "\201C";
+  font-family: 'Caveat', cursive;
+  font-size: 72px;
+  opacity: 0.25;
+  color: var(--color-accent);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  line-height: 1;
+}
+.nse3de40-pushpin {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.nse3de40-testimonial-text {
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  opacity: 0.7;
+  margin: 0 0 16px 0;
+  padding-top: 24px;
+}
+.nse3de40-customer-name {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: var(--color-primary);
+  text-align: right;
+  margin: 0;
+}
+
+/* Instagram Feed Section */
+.nse3de40-instagram-feed {
+  background: #c3a48d;
+  padding: 64px 24px;
+  position: relative;
+}
+.nse3de40-instagram-feed::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.nse3de40-instagram-header {
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+.nse3de40-instagram-header h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  color: white;
+  margin: 0;
+}
+.nse3de40-instagram-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+.nse3de40-polaroid-card {
+  flex: 0 0 200px;
+  background: white;
+  padding: 10px 10px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  transform: rotate(var(--rotation, 2deg));
+}
+.nse3de40-polaroid-card:nth-child(even) {
+  --rotation: -3deg;
+}
+.nse3de40-polaroid-card:nth-child(odd) {
+  --rotation: 2deg;
+}
+.nse3de40-polaroid-inner {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.nse3de40-gradient-square {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  gap: 8px;
+}
+.nse3de40-gradient-square span:first-child {
+  font-weight: bold;
+}
+.nse3de40-gradient-square span:last-child {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+}
+.nse3de40-polaroid-card .nse3de40-pushpin {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #d7885c;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.nse3de40-instagram-cta {
+  display: inline-block;
+  background: white;
+  color: #c3a48d;
+  padding: 12px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 32px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nse3de40-instagram-cta:hover {
+  background: #d7885c;
+  color: white;
+}
+
+/* Contact Section */
+.nse3de40-contact-section {
+  background: var(--color-secondary);
+  padding: 64px 16px;
+  display: flex;
+  justify-content: center;
+}
+.nse3de40-contact-card {
+  position: relative;
+  max-width: 520px;
+  padding: 48px;
+  background: var(--color-background);
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.nse3de40-decorative-svg {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+}
+.nse3de40-headline {
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+}
+.nse3de40-dots-separator {
+  height: 2px;
+  background-image: radial-gradient(circle, var(--color-accent) 2px, transparent 2px);
+  background-size: 8px 2px;
+  background-repeat: repeat-x;
+  margin: 24px 0;
+}
+.nse3de40-subhead {
+  font-size: 1rem;
+  color: rgba(26,26,26,0.9);
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+}
+.nse3de40-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nse3de40-field {
+  position: relative;
+}
+.nse3de40-field input,
+.nse3de40-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+.nse3de40-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.nse3de40-field label {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.nse3de40-field input:focus + label,
+.nse3de40-field input:not(:placeholder-shown) + label,
+.nse3de40-field textarea:focus + label,
+.nse3de40-field textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 12px;
+  font-size: 0.8rem;
+  background: white;
+  padding: 0 4px;
+  color: var(--color-accent);
+}
+.nse3de40-field input:focus,
+.nse3de40-field textarea:focus {
+  border-color: var(--color-accent);
+}
+.nse3de40-cta-button {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #ffffff;
+  padding: 16px 48px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  border: none;
+  line-height: 1;
+}
+.nse3de40-cta-button:hover {
+  background-color: #c7754c;
+  transform: scale(1.05);
+}
+.nse3de40-cta-button::after {
+  content: ' →';
+  display: inline;
+}
+
+/* CTA Section */
+.nse3de40-cta {
+  background-color: var(--color-secondary);
+  padding: 64px 16px;
+  display: flex;
+  justify-content: center;
+}
+.nse3de40-sticky-note {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transform: rotate(-1.5deg);
+  padding: 40px;
+  max-width: 480px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0,0,0,0.03) 40px, rgba(0,0,0,0.03) 41px),
+    repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(0,0,0,0.03) 40px, rgba(0,0,0,0.03) 41px);
+}
+.nse3de40-pushpin {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle at 40% 40%, #e6a57a, #d7885c);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.nse3de40-pushpin::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 8px;
+  background: #b87333;
+  border-radius: 1px;
+}
+.nse3de40-pushpin-left {
+  top: -6px;
+  left: 20px;
+}
+.nse3de40-pushpin-right {
+  top: -6px;
+  right: 20px;
+}
+.nse3de40-paperclip {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(10deg);
+  z-index: 2;
+}
+.nse3de40-headline {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: clamp(28px, 5vw, 36px);
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.nse3de40-subhead {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.nse3de40-body {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.nse3de40-cta-button {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #ffffff;
+  padding: 16px 48px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  border: none;
+  line-height: 1;
+}
+.nse3de40-cta-button:hover {
+  background-color: #c7754c;
+  transform: scale(1.05);
+}
+.nse3de40-cta-button::after {
+  content: ' →';
+}
+
+/* Footer */
+.nse3de40-footer {
+  background-color: var(--color-primary);
+  padding: 48px 16px;
+}
+@media (min-width: 768px) {
+  .nse3de40-footer {
+    padding: 64px 24px;
+  }
+}
+.nse3de40-footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.nse3de40-footer-divider {
+  border: none;
+  border-top: 1px solid #fff;
+  opacity: 0.3;
+  margin: 0 0 24px 0;
+}
+.nse3de40-footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .nse3de40-footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.nse3de40-footer-signoff {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #ffffff;
+}
+.nse3de40-footer-social {
+  display: flex;
+  gap: 12px;
+}
+.nse3de40-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.nse3de40-social-icon:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: #fff;
+}</style>
+</head>
+<body>
+<section class="nse3de40-hero" style="background: #f5f5f5; padding: 120px 24px 80px;">
+  <div class="nse3de40-hero-inner">
+    <div class="nse3de40-hero-photo">
+      <img src="https://scontent-lax3-1.cdninstagram.com/v/t51.82787-15/695224658_18089555522584384_1059427825188868723_n.jpg?stp=dst-jpg_e35_s1080x1080_sh2.08_tt6&_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=104&_nc_oc=Q6cZ2gHmPsjIvchY9F1bu_SI_j8TNs2n9DLGV5hMRqQ9ThOTcyrS2SnzgrVqYcolkqYveFA&_nc_ohc=GfvMlLS7LwAQ7kNvwHDyHHq&_nc_gid=lr0GNdsZYNprzXOmUBd5Tg&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af4FBo7oX96km1VGWivVPXtYkICENrW0B59XRHI8IA_FiQ&oe=6A0AFE05&_nc_sid=10d13b" alt="Boutique interior with shelves and pottery" />
+      <div class="nse3de40-heart">♥</div>
+    </div>
+    <div class="nse3de40-torn-paper">
+      <svg viewBox="0 0 100 20" preserveAspectRatio="none" class="nse3de40-torn-top">
+        <path d="M0,20 Q15,5 30,15 T60,10 T100,20 Z" fill="white"/>
+      </svg>
+      <div class="nse3de40-torn-content">
+        <h1 class="nse3de40-hero-headline">New Location, Same Obsession ♥️</h1>
+        <p class="nse3de40-hero-subhead">We&#x27;ve moved to Riverbank! Come see our new space at 6730 3rd St.</p>
+        <a href="https://maps.google.com/?q=6730+3rd+St%2C+Riverbank%2C+CA+95367%2C+USA" class="nse3de40-hero-cta">Come See Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<section class="nse3de40-about" style="background: var(--color-secondary);">
+  <div class="nse3de40-about-container">
+    <div class="nse3de40-about-card">
+      <div class="nse3de40-sticky-note">
+        <div class="nse3de40-pushpin"></div>
+        <p class="nse3de40-note-title">A note from the owner</p>
+        <p class="nse3de40-note-text">Welcome to our store! We hope you find something special.</p>
+      </div>
+      <h2 class="nse3de40-headline">Handpicked with Love, Just for Riverbank</h2>
+      <p class="nse3de40-body">We&#x27;re a family-run boutique that scours the best finds in clothing, gifts, and home décor so you don&#x27;t have to. Our team is always here to help you discover that perfect piece—stop in and see what&#x27;s new!</p>
+    </div>
+  </div>
+</section>
+<section class="nse3de40-hours-location">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" class="nse3de40-wavy-divider">
+    <path d="M0,30 C200,0 400,60 600,30 C800,0 1000,60 1200,30 Z" fill="#f5f5f5"/>
+  </svg>
+  <div class="nse3de40-hours-location-container">
+    <div class="nse3de40-hours-card">
+      <div class="nse3de40-hours-card-border"></div>
+      <h3>Visit Us</h3>
+      <p class="nse3de40-address">6730 3rd St, Riverbank, CA 95367</p>
+      <p class="nse3de40-hours">Tuesday – Saturday: 11am – 5pm<br>Saturday Night Market: until 8:30pm</p>
+    </div>
+    <div class="nse3de40-map-card">
+      <svg viewBox="0 0 300 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- wobbly road lines -->
+        <path d="M20,180 Q80,120 140,150 Q200,180 260,120" fill="none" stroke="#d7885c" stroke-width="2" stroke-dasharray="4 4"/>
+        <path d="M260,120 Q280,100 290,80" fill="none" stroke="#d7885c" stroke-width="2"/>
+        <!-- star marker -->
+        <polygon points="200,80 205,95 220,95 208,105 212,120 200,110 188,120 192,105 180,95 195,95" fill="#d7885c"/>
+        <!-- compass rose -->
+        <g transform="translate(50,40) scale(0.6)">
+          <circle cx="0" cy="0" r="20" fill="none" stroke="#d7885c" stroke-width="1.5"/>
+          <polygon points="0,-25 5,-5 0,0 -5,-5" fill="#d7885c"/>
+          <polygon points="0,25 5,5 0,0 -5,5" fill="#c3a48d"/>
+          <polygon points="-25,0 -5,5 0,0 -5,-5" fill="#d7885c"/>
+          <polygon points="25,0 5,-5 0,0 5,5" fill="#c3a48d"/>
+          <text x="0" y="-30" text-anchor="middle" fill="#d7885c" font-size="12">N</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+<section class="nse3de40">
+  <div class="nse3de40__header">
+    <span></span>
+    <h3>What&#x27;s New</h3>
+  </div>
+  <div class="nse3de40-gallery">
+    <div class="nse3de40-gallery-card">
+      <div class="nse3de40-card-circle"></div>
+      <span class="nse3de40-card-star">★</span>
+      <p class="nse3de40-card-text">Coming Soon</p>
+    </div>
+    <div class="nse3de40-gallery-card">
+      <div class="nse3de40-card-circle"></div>
+      <span class="nse3de40-card-star">★</span>
+      <p class="nse3de40-card-text">Coming Soon</p>
+    </div>
+    <div class="nse3de40-gallery-card">
+      <div class="nse3de40-card-circle"></div>
+      <span class="nse3de40-card-star">★</span>
+      <p class="nse3de40-card-text">Coming Soon</p>
+    </div>
+    <div class="nse3de40-gallery-card">
+      <div class="nse3de40-card-circle"></div>
+      <span class="nse3de40-card-star">★</span>
+      <p class="nse3de40-card-text">Coming Soon</p>
+    </div>
+  </div>
+</section>
+<section class="nse3de40-events" data-hubs-image="events" data-photo-url="" data-image-prompt="Night market scene with string lights and sidewalk sales">
+  <div class="nse3de40-events-container">
+    <div class="nse3de40-event-card-wrapper">
+      <div class="nse3de40-perforated-edge"></div>
+      <div class="nse3de40-event-card">
+        <div class="nse3de40-event-card-inner">
+          <h2 class="nse3de40-event-headline">Night Market Nights Are Here</h2>
+          <p class="nse3de40-event-subhead">Join us for extended hours, sidewalk sales, and the best community party in Riverbank.</p>
+          <p class="nse3de40-event-body">The Riverbank Night Market is back, and we&#x27;re staying open late! On select Saturdays, we&#x27;re open until 8:30pm with special sidewalk sales you won&#x27;t want to miss. Come wander, shop, and find something new.</p>
+          <div class="nse3de40-event-details">
+            <svg class="nse3de40-calendar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d7885c" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Extended Hours on March 7th &amp; 21st</span>
+          </div>
+          <a href="https://www.instagram.com/bendthetrend/" class="nse3de40-cta-button">See You Saturday</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="nse3de40-testimonials">
+    <div class="nse3de40-testimonial-card">
+        <div class="nse3de40-pushpin"></div>
+        <p class="nse3de40-testimonial-text">"Bend the Trend has completely transformed my wardrobe! Their curated pieces are always on point."</p>
+        <p class="nse3de40-customer-name">- Sarah M.</p>
+    </div>
+</section>
+<section class="nse3de40-instagram-feed">
+  <div class="nse3de40-instagram-header">
+    <h3>Follow us @bendthetrend</h3>
+  </div>
+  <div class="nse3de40-instagram-track">
+    <div class="nse3de40-polaroid-card">
+      <div class="nse3de40-polaroid-inner">
+        <div class="nse3de40-gradient-square">
+          <span>@bendthetrend</span>
+          <span>Coming Soon</span>
+        </div>
+      </div>
+      <div class="nse3de40-pushpin"></div>
+    </div>
+    <div class="nse3de40-polaroid-card">
+      <div class="nse3de40-polaroid-inner">
+        <div class="nse3de40-gradient-square">
+          <span>@bendthetrend</span>
+          <span>Coming Soon</span>
+        </div>
+      </div>
+      <div class="nse3de40-pushpin"></div>
+    </div>
+    <div class="nse3de40-polaroid-card">
+      <div class="nse3de40-polaroid-inner">
+        <div class="nse3de40-gradient-square">
+          <span>@bendthetrend</span>
+          <span>Coming Soon</span>
+        </div>
+      </div>
+      <div class="nse3de40-pushpin"></div>
+    </div>
+    <div class="nse3de40-polaroid-card">
+      <div class="nse3de40-polaroid-inner">
+        <div class="nse3de40-gradient-square">
+          <span>@bendthetrend</span>
+          <span>Coming Soon</span>
+        </div>
+      </div>
+      <div class="nse3de40-pushpin"></div>
+    </div>
+    <div class="nse3de40-polaroid-card">
+      <div class="nse3de40-polaroid-inner">
+        <div class="nse3de40-gradient-square">
+          <span>@bendthetrend</span>
+          <span>Coming Soon</span>
+        </div>
+      </div>
+      <div class="nse3de40-pushpin"></div>
+    </div>
+    <div class="nse3de40-polaroid-card">
+      <div class="nse3de40-polaroid-inner">
+        <div class="nse3de40-gradient-square">
+          <span>@bendthetrend</span>
+          <span>Coming Soon</span>
+        </div>
+      </div>
+      <div class="nse3de40-pushpin"></div>
+    </div>
+  </div>
+  <a href="https://www.instagram.com/bendthetrend/" class="nse3de40-instagram-cta">Follow our daily discoveries</a>
+</section>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<section class="nse3de40-contact-section">
+  <div class="nse3de40-contact-card">
+    <div class="nse3de40-decorative-svg">
+      <svg viewBox="0 0 80 80" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(10, 10)">
+          <!-- Pot -->
+          <polygon points="0,40 10,60 50,60 60,40" fill="var(--color-accent)" />
+          <rect x="8" y="10" width="44" height="30" rx="4" fill="var(--color-accent)" />
+          <rect x="6" y="8" width="48" height="8" rx="2" fill="var(--color-accent)" />
+          <!-- Leaves -->
+          <path d="M30 20 Q20 0 30 -5 Q40 0 30 20" fill="var(--color-primary)" />
+          <path d="M30 20 Q40 -5 50 0 Q45 15 30 20" fill="var(--color-primary)" />
+          <path d="M30 20 Q10 15 5 25 Q15 30 30 20" fill="var(--color-primary)" />
+        </g>
+      </svg>
+    </div>
+    <h2 class="nse3de40-headline">Got Questions? We'd Love to Chat</h2>
+    <div class="nse3de40-dots-separator"></div>
+    <p class="nse3de40-subhead">Call us at (209) 872-5344 or stop in Tuesday through Saturday 11am-5pm. We're real people and we love to help.</p>
+    <form class="nse3de40-contact-form">
+      <div class="nse3de40-field">
+        <input type="text" id="name" required />
+        <label for="name">Name</label>
+      </div>
+      <div class="nse3de40-field">
+        <input type="email" id="email" required />
+        <label for="email">Email</label>
+      </div>
+      <div class="nse3de40-field">
+        <textarea id="message" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit" class="nse3de40-cta-button">Send Message</button>
+    </form>
+  </div>
+</section>
+<section class="nse3de40-cta">
+  <div class="nse3de40-sticky-note">
+    <div class="nse3de40-pushpin nse3de40-pushpin-left"></div>
+    <div class="nse3de40-pushpin nse3de40-pushpin-right"></div>
+    <div class="nse3de40-paperclip" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="40" height="40" fill="#d7885c">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm0 2c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+        <path d="M10 17h4v3h-4z" opacity="0.3"/>
+      </svg>
+    </div>
+    <h2 class="nse3de40-headline">Plan Your Visit Today</h2>
+    <p class="nse3de40-subhead">New arrivals land weekly — there's always something waiting you didn't know you needed.</p>
+    <p class="nse3de40-body">Come wander, shop, and see what catches your eye. Stop in during our regular hours Tuesday through Saturday 11am-5pm, or join us for Saturday Night Market when we're open late until 8:30pm. See you soon! 🤍</p>
+    <a href="https://maps.google.com/?q=6730+3rd+St%2C+Riverbank%2C+CA+95367%2C+USA" class="nse3de40-cta-button">Come Wander, Shop →</a>
+  </div>
+</section>
+<section class="nse3de40-footer">
+  <div class="nse3de40-footer-container">
+    <hr class="nse3de40-footer-divider" aria-hidden="true">
+    <div class="nse3de40-footer-content">
+      <div class="nse3de40-footer-signoff">Thanks for stoppin’ by! ♥</div>
+      <div class="nse3de40-footer-social">
+        <a href="#" class="nse3de40-social-icon" aria-label="Instagram"><span>IG</span></a>
+        <a href="#" class="nse3de40-social-icon" aria-label="Facebook"><span>FB</span></a>
+        <a href="#" class="nse3de40-social-icon" aria-label="Twitter"><span>TW</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
